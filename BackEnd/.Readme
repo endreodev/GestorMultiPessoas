@@ -1,0 +1,33 @@
+﻿
+
+
+dotnet add package Microsoft.EntityFrameworkCore --version 8.0.12
+dotnet add package Pomelo.EntityFrameworkCore.MySql --version 8.0.12
+dotnet add package Microsoft.EntityFrameworkCore.Design --version 8.0.12
+dotnet add package Microsoft.EntityFrameworkCore.Tools --version 8.0.12
+dotnet add package Microsoft.EntityFrameworkCore.Relacional --version 8.0.12
+
+
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer
+dotnet add package System.IdentityModel.Tokens.Jwt
+
+# PS E:\Projeto_Endreo\GeMultiPessoas> dotnet tool update --global dotnet-ef
+# A ferramenta 'dotnet-ef' foi atualizada com êxito da versão '8.0.8' para a versão '9.0.1'.
+dotnet tool update --global dotnet-ef
+
+
+✅ Criar uma migração:
+dotnet ef migrations add NomeDaMigracao
+
+✅ Aplicar as mudanças no banco:
+dotnet ef database update
+
+✅ Listar migrações:
+dotnet ef migrations list
+
+✅ Resetar o banco (se necessário):
+dotnet ef database drop --force
+dotnet ef database update
+
+Agora seu banco de dados estará sempre sincronizado com os Models! 🚀
+Se precisar de mais ajuda, me avise! 💪

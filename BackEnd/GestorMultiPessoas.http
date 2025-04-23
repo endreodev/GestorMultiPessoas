@@ -1,0 +1,6 @@
+@GeMultiPessoas_HostAddress = http://localhost:5177
+
+GET {{GestorMultiPessoas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
