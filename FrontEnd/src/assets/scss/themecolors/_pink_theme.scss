@@ -1,0 +1,10 @@
+@use "sass:map";
+@use "@angular/material" as mat;
+
+html.pink_theme {
+  --mat-sys-primary: rgb(255, 92, 142);
+  --mat-sys-primary-fixed-dim: rgb(255, 92, 142, 0.15);
+  --mat-sys-secondary: rgb(94, 36, 77);
+  --mat-sys-secondary-fixed-dim: rgb(94, 36, 77, 0.15);
+  --mat-sys-tertiary: rgb(94, 36, 77);
+}
