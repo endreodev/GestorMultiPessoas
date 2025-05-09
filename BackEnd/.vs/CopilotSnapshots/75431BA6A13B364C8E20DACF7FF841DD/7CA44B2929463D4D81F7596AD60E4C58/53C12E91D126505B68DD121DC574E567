@@ -1,0 +1,17 @@
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace GestorMultiPessoas.Autentication.Controllers
+{
+    [ApiController]
+    [Route("api/auth")]
+    [ApiExplorerSettings(GroupName = "auth")]
+    public class AuthController : ControllerBase
+    {
+        [HttpPost("login")]
+        public IActionResult Login()
+        {
+            // Implementation
+            return Ok();
+        }
+    }
+}

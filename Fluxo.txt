@@ -1,0 +1,35 @@
+[Início]
+   |
+   v
+[Cadastro Inicial]
+   - Cadastrar Empresa, Cargo, Sindicato, Turno, CentroCusto, Verba
+   - Incluir Pessoa (dados pessoais, endereço)
+   - Criar Contrato (vínculo com Empresa, Cargo, Salário)
+   |
+   v
+[Gestão de Movimentações]
+   - Registrar MovimentacaoSalarial (reajustes, promoções)
+   - Atualizar Pessoa/Contrato para S-2205/S-2206
+   |
+   v
+[Processamento da Folha]
+   - Criar FolhaPagamento (Competencia, TipoFolha)
+   - Gerar LancamentoFolha (proventos, descontos)
+   - Calcular encargos (INSS, FGTS, IRRF)
+   - Validar dados (rubricas, CPFs)
+   |
+   v
+[Integração com eSocial]
+   - Gerar eventos (S-1000, S-1200, S-2200, etc.)
+   - Enviar via webservice
+   - Registrar status em EventoSocial
+   - Tratar rejeições (corrigir dados)
+   |
+   v
+[Relatórios e Arquivos Legais]
+   - Gerar holerites (LancamentoFolha)
+   - Produzir RAIS, DIRF, SEFIP, CAGED
+   - Exportar dados para financeiro
+   |
+   v
+[Fim]

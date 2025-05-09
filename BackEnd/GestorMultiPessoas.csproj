@@ -7,11 +7,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Controllers\WeatherForecastController.cs" />
+    <Compile Remove="Autentication\Repository\Sistema\**" />
+    <Content Remove="Autentication\Repository\Sistema\**" />
+    <EmbeddedResource Remove="Autentication\Repository\Sistema\**" />
+    <None Remove="Autentication\Repository\Sistema\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Autentication\Controllers\WeatherForecastController.cs" />
     <Compile Remove="WeatherForecast.cs" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="BCrypt.Net" Version="0.1.0" />
     <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.12" />
@@ -30,7 +38,30 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Repository\Sistema\" />
+    <Folder Include="Autentication\Helper\" />
+    <Folder Include="Folha\Dto\" />
+    <Folder Include="Folha\Interface\" />
+    <Folder Include="Folha\Model\" />
+    <Folder Include="Folha\Repository\" />
+    <Folder Include="Folha\Service\" />
+    <Folder Include="Relatórios\Dto\" />
+    <Folder Include="Relatórios\Interface\" />
+    <Folder Include="Relatórios\Model\" />
+    <Folder Include="Relatórios\Repository\" />
+    <Folder Include="Relatórios\Service\" />
+    <Folder Include="Integracoes\Dto\" />
+    <Folder Include="Integracoes\Interface\" />
+    <Folder Include="Integracoes\Model\" />
+    <Folder Include="Integracoes\Repository\" />
+    <Folder Include="Integracoes\Service\" />
+    <Folder Include="Cadastros\Dto\" />
+    <Folder Include="Cadastros\Interface\" />
+    <Folder Include="Cadastros\Model\" />
+    <Folder Include="Cadastros\Repository\" />
+    <Folder Include="Cadastros\Service\" />
+    <Folder Include="Autentication\Interface\" />
+    <Folder Include="Autentication\Repository\" />
+    <Folder Include="Autentication\Service\" />
   </ItemGroup>
 
 </Project>

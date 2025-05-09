@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GestorMultiPessoas")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bb8823b5f0279f891911db9fc54613ecb75a60e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b59b4e936b92b27a12f3642bdedd29dbf9217d75")]
 [assembly: System.Reflection.AssemblyProductAttribute("GestorMultiPessoas")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GestorMultiPessoas")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

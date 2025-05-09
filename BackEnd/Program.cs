@@ -1,5 +1,4 @@
-﻿using GestorMultiPessoas.Context;
-using GestorMultiPessoas.Repository.Cadastro;
+﻿using GestorMultiPessoas.Context; 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -56,13 +55,6 @@ var connectionString = builder.Configuration.GetConnectionString("MySqlConnectio
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString)));
 
-
-builder.Services.AddScoped<UsuarioRepository>();
-builder.Services.AddScoped<EmpresaRepository>();
-builder.Services.AddScoped<IFuncionarioRepository, FuncionarioRepository>();
-builder.Services.AddScoped<ISalarioRepository, SalarioRepository>();
-builder.Services.AddScoped<IBeneficioRepository, BeneficioRepository>();
-
 // Adicionar serviços
 //builder.Services.AddControllers();
 
@@ -81,28 +73,56 @@ builder.Services.AddControllers()
     builder.Services.AddEndpointsApiExplorer();
     //builder.Services.AddSwaggerGen();
 
-    // Configurar Swagger com um título personalizado
+    // Configurar Swagger com múltiplas documentações
     builder.Services.AddSwaggerGen(c =>
     {
-        c.SwaggerDoc("v1", new OpenApiInfo
+        // Authentication API Documentation
+        c.SwaggerDoc("auth", new OpenApiInfo
         {
-            Title = "Minha API Personalizada",
+            Title = "Authentication API",
             Version = "v1",
-            Description = "Documentação da API para o gerenciamento",
+            Description = "API endpoints for authentication and authorization",
             Contact = new OpenApiContact
             {
                 Name = "Suporte da API",
                 Email = "suporte@email.com",
                 Url = new Uri("https://minhaapi.com/suporte")
-            },
-            License = new OpenApiLicense
-            {
-                Name = "Licença MIT",
-                Url = new Uri("https://opensource.org/licenses/MIT")
             }
         });
 
-        // Adicionando autenticação JWT no Swagger
+        // Registration API Documentation
+        c.SwaggerDoc("cadastros", new OpenApiInfo
+        {
+            Title = "Registration API",
+            Version = "v1",
+            Description = "API endpoints for managing registrations and entities"
+        });
+
+        // Payroll API Documentation
+        c.SwaggerDoc("folha", new OpenApiInfo
+        {
+            Title = "Payroll API",
+            Version = "v1",
+            Description = "API endpoints for payroll management"
+        });
+
+        // Reports API Documentation
+        c.SwaggerDoc("relatorios", new OpenApiInfo
+        {
+            Title = "Reports API",
+            Version = "v1",
+            Description = "API endpoints for reports generation"
+        });
+
+        // Integrations API Documentation
+        c.SwaggerDoc("integracoes", new OpenApiInfo
+        {
+            Title = "Integrations API",
+            Version = "v1",
+            Description = "API endpoints for external integrations"
+        });
+
+        // Configure JWT Authentication
         c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
         {
             Name = "Authorization",
@@ -110,7 +130,7 @@ builder.Services.AddControllers()
             Scheme = "Bearer",
             BearerFormat = "JWT",
             In = ParameterLocation.Header,
-            Description = "Digite 'Bearer {seu token JWT}'"
+            Description = "Enter 'Bearer' [space] and then your token in the text input below.\n\nExample: 'Bearer 12345abcdef'"
         });
 
         c.AddSecurityRequirement(new OpenApiSecurityRequirement
@@ -127,30 +147,27 @@ builder.Services.AddControllers()
                 new string[] {}
             }
         });
-
     });
 
+// Enable Swagger middleware
 var app = builder.Build();
 
-// Configuração do pipeline HTTP
-//if (app.Environment.IsDevelopment())
-//{
-//    app.UseSwagger();
-//    app.UseSwaggerUI();
-//}
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI(c =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Minha API Personalizada v1");
-        c.DocumentTitle = "Documentação da API - Dicionário de Dados"; // 🔹 Altera o título da aba do navegador
+        c.SwaggerEndpoint("/swagger/auth/swagger.json", "Autenticação API v1");
+        c.SwaggerEndpoint("/swagger/cadastros/swagger.json", "Cadastros API v1");
+        c.SwaggerEndpoint("/swagger/folha/swagger.json", "Folha API v1");
+        c.SwaggerEndpoint("/swagger/relatorios/swagger.json", "Relatórios API v1");
+        c.SwaggerEndpoint("/swagger/integracoes/swagger.json", "Integrações API v1");
     });
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthentication(); // 🔹 Ativar autenticação JWT
+app.UseAuthentication();
 app.UseAuthorization();
+
 app.MapControllers();
+
 app.Run();

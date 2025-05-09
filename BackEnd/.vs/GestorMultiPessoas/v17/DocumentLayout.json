@@ -1,22 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Projeto_Endreo\\GestorMultiPessoas\\",
+  "WorkspaceRootPath": "E:\\Projeto_Endreo\\GestorMultiPessoas\\BackEnd\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|e:\\projeto_endreo\\gestormultipessoas\\dto\\acessos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|solutionrelative:dto\\acessos\\authdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|e:\\projeto_endreo\\gestormultipessoas\\model\\cadastro\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|solutionrelative:model\\cadastro\\funcionario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|e:\\projeto_endreo\\gestormultipessoas\\model\\acessos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|solutionrelative:model\\acessos\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|e:\\projeto_endreo\\gestormultipessoas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|e:\\projeto_endreo\\gestormultipessoas\\backend\\gestormultipessoas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|solutionrelative:gestormultipessoas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,47 +14,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 7,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Projeto_Endreo\\GestorMultiPessoas\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\Projeto_Endreo\\GestorMultiPessoas\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-04-23T15:27:40.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "E:\\Projeto_Endreo\\GestorMultiPessoas\\Model\\Acessos\\Usuario.cs",
-              "RelativeDocumentMoniker": "Model\\Acessos\\Usuario.cs",
-              "ToolTip": "E:\\Projeto_Endreo\\GestorMultiPessoas\\Model\\Acessos\\Usuario.cs",
-              "RelativeToolTip": "Model\\Acessos\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T15:24:59.982Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Funcionario.cs",
-              "DocumentMoniker": "E:\\Projeto_Endreo\\GestorMultiPessoas\\Model\\Cadastro\\Funcionario.cs",
-              "RelativeDocumentMoniker": "Model\\Cadastro\\Funcionario.cs",
-              "ToolTip": "E:\\Projeto_Endreo\\GestorMultiPessoas\\Model\\Cadastro\\Funcionario.cs",
-              "RelativeToolTip": "Model\\Cadastro\\Funcionario.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T15:24:19.2Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:131:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
@@ -98,14 +47,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AuthDto.cs",
-              "DocumentMoniker": "E:\\Projeto_Endreo\\GestorMultiPessoas\\Dto\\Acessos\\AuthDto.cs",
-              "RelativeDocumentMoniker": "Dto\\Acessos\\AuthDto.cs",
-              "ToolTip": "E:\\Projeto_Endreo\\GestorMultiPessoas\\Dto\\Acessos\\AuthDto.cs",
-              "RelativeToolTip": "Dto\\Acessos\\AuthDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-23T15:23:14.564Z",
+              "Title": "GestorMultiPessoas",
+              "DocumentMoniker": "E:\\Projeto_Endreo\\GestorMultiPessoas\\BackEnd\\GestorMultiPessoas.csproj",
+              "RelativeDocumentMoniker": "GestorMultiPessoas.csproj",
+              "ToolTip": "E:\\Projeto_Endreo\\GestorMultiPessoas\\BackEnd\\GestorMultiPessoas.csproj",
+              "RelativeToolTip": "GestorMultiPessoas.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-09T21:18:53.626Z",
               "EditorCaption": ""
             }
           ]

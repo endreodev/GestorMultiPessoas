@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Projeto_Endreo\\GestorMultiPessoas\\",
-  "Documents": [],
+  "WorkspaceRootPath": "E:\\Projeto_Endreo\\GestorMultiPessoas\\BackEnd\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|e:\\projeto_endreo\\gestormultipessoas\\backend\\gestormultipessoas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{DF203114-EAF5-4641-842C-7B1419E8888D}|GestorMultiPessoas.csproj|solutionrelative:gestormultipessoas.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,6 +43,19 @@
             {
               "$type": "Bookmark",
               "Name": "ST:133:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GestorMultiPessoas",
+              "DocumentMoniker": "E:\\Projeto_Endreo\\GestorMultiPessoas\\BackEnd\\GestorMultiPessoas.csproj",
+              "RelativeDocumentMoniker": "GestorMultiPessoas.csproj",
+              "ToolTip": "E:\\Projeto_Endreo\\GestorMultiPessoas\\BackEnd\\GestorMultiPessoas.csproj",
+              "RelativeToolTip": "GestorMultiPessoas.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-09T21:18:53.626Z",
+              "EditorCaption": ""
             }
           ]
         },
