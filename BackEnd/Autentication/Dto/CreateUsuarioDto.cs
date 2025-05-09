@@ -1,5 +1,7 @@
 ﻿using GestorMultiPessoas.Autentication.Model;
-using System.ComponentModel.DataAnnotations;
+using GestorMultiPessoas.Autentication.Enums;
+using System.ComponentModel.DataAnnotations; 
+
 
 namespace GestorMultiPessoas.Autentication.Dto
 {
@@ -19,7 +21,7 @@ namespace GestorMultiPessoas.Autentication.Dto
         public string? Celular { get; set; }
 
         [Required(ErrorMessage = "O Perfil é obrigatório.")]
-        public required PerfilUsuario Perfil { get; set; }
+        public required EnunsAutentication.PerfilUsuario Perfil { get; set; }
     }
 
 }
